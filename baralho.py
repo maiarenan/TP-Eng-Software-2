@@ -1,5 +1,5 @@
 import random
-import carta as Carta
+from carta import Carta
 from constantes import carta_valores, carta_nipes
 
 class Baralho:
