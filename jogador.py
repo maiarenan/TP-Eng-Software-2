@@ -10,7 +10,6 @@ class Jogador():
 
     def set_nome(self, name):
         self.name = name
-        return self.cumprimentar_jogador()
     
     def get_nome(self):
         return self.name
