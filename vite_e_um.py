@@ -28,6 +28,7 @@ class Vinte_e_um():
 
 
     def _verifica_estado_pos_1_rodada(self):
+        
         if self.jogador.mao.verifica_se_vitoria_blackjack():
             print(f'Jogador {self.jogador.name} já foi declarado vitorioso! Sua mão:')
             print(f'{self.jogador.mao.get_cartas()}')
@@ -68,9 +69,9 @@ class Vinte_e_um():
         
         else:
             if resposta == 'S':
-                return self._inserir_carta_jogador()
+                return True
             else:
-                return self.mostrar_score_jogador()
+                return False
 
     def mostrar_score_jogador(self):
         print(f'Score do jogador: {self.jogador.get_score()}')
@@ -79,16 +80,38 @@ class Vinte_e_um():
     def mostrar_score_croupier(self):
         print(f'Score do Croupier: {self.croupier.get_score()}')
 
-    def _inserir_carta_jogador(self):
+    def inserir_carta_jogador(self):
         card = self.baralho.virar()
         self.jogador.mao.insert_card(card)
         perdeu = self.jogador.mao.verifica_se_perdeu()
-        return self.mostrar_score_jogador()
+        return perdeu
     
     def _inserir_carta_croupier(self):
         card = self.baralho.virar()
-        self.jogador.mao.insert_card(card)
-        return self.mostrar_score_jogador()
+        self.croupier.mao.insert_card(card)
+
+    def croupier_comprar_cartas_ate_passar_jogador(self):
+        score_croupier = self.croupier.get_score()
+        score_jogador = self.jogador.get_score()
+        
+        while score_croupier < score_jogador:
+            self._inserir_carta_croupier()
+            score_croupier = self.croupier.get_score()
+
+
+    def definir_vencedor(self):
+        score_croupier = self.croupier.get_score()
+        score_jogador = self.jogador.get_score()
+
+        if score_croupier > 21:
+            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_jogador} pontos de Crupier')
+
+        elif score_croupier > score_jogador:
+            print(f'O Crupier venceu!! Com {score_croupier} pontos, contra  {score_jogador} pontos de {self.jogador.name}')
+
+        elif score_jogador > score_croupier:
+            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_jogador} pontos de Crupier')
+        
 
 
 
