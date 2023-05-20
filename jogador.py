@@ -7,6 +7,7 @@ class Jogador():
     
     def cumprimentar_jogador(self):
         print(f'Olá {self.name}, bem vindo ao nosso jogo de 21. Esperamos que você se divirta muito!!!')
+        print()
 
     def set_nome(self, name):
         self.name = name
