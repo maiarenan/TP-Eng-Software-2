@@ -17,9 +17,10 @@ def main():
             fim_de_jogo = False
             while not fim_de_jogo:
                 continuar = game.perguntar_jogador_proxima_jogada()
-                
                 if continuar:
                     perdeu = game.inserir_carta_jogador()
+                    game.mostrar_score_jogador()
+
                     if perdeu:
                         print(f'Ooopsss {game.jogador.name}, você estourou o limite!!!')
                         game.mostrar_score_jogador()
