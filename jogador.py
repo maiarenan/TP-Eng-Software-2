@@ -4,13 +4,13 @@ class Jogador():
         self.name = name
         self.saldo = 0
         self.mao = Mao.Mao()
-        self.cumprimento = self.cumprimentar_jogador()
     
     def cumprimentar_jogador(self):
         print(f'Olá {self.name}, bem vindo ao nosso jogo de 21. Esperamos que você se divirta muito!!!')
 
     def set_nome(self, name):
         self.name = name
+        return self.cumprimentar_jogador()
     
     def get_nome(self):
         return self.name
