@@ -35,3 +35,6 @@ carta_nipes=[
    '♥',
    '♣'
 ]
+
+vitoria_simples = 1
+vitoria_blackjack = 1.5
