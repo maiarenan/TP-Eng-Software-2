@@ -102,13 +102,13 @@ class Vinte_e_um():
         score_jogador = self.jogador.get_score()
 
         if score_croupier > 21:
-            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_jogador} pontos de Crupier')
+            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_croupier} pontos de Crupier')
 
         elif score_croupier > score_jogador:
             print(f'O Crupier venceu!! Com {score_croupier} pontos, contra  {score_jogador} pontos de {self.jogador.name}')
 
         elif score_jogador > score_croupier:
-            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_jogador} pontos de Crupier')
+            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_croupier} pontos de Crupier')
         
 
 
