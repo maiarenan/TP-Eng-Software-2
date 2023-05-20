@@ -61,17 +61,15 @@ class Vinte_e_um():
         return self._verifica_estado_pos_1_rodada()
 
     def perguntar_jogador_proxima_jogada(self):
-        resposta = input('Digite S para comprar mais cartas, ou N para parar').upper()
-        
-        if resposta != 'S' and resposta != 'N':
-            print('Digita a letra certa o miseravi!')
-            return self.perguntar_jogador_proxima_jogada()
-        
-        else:
+        while True:
+            resposta = input('Digite S para comprar mais cartas, ou N para parar: ').upper()
+
             if resposta == 'S':
                 return True
-            else:
+            elif resposta == 'N':
                 return False
+
+        print('Entrada inválida. Digite S para comprar mais cartas, ou N para parar.')
 
     def mostrar_score_jogador(self):
         print(f'Score do jogador: {self.jogador.get_score()}')
