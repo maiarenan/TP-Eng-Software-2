@@ -11,12 +11,13 @@ class Mao():
         else:
             self.score += 1
 
-    def valor_mao(self, card):
+    def calcula_valor_mao(self, card):
         if card.valor == 'A':
             return self.calcular_score_se_as(card)
+        
         else:
             self.score += const.cartas_valor_no_21.get(card.valor)
-    
+
     def verifica_se_perdeu(self):
         return self.score > 21
     
