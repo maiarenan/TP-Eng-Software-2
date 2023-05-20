@@ -96,20 +96,19 @@ class Vinte_e_um():
             self._inserir_carta_croupier()
             score_croupier = self.croupier.get_score()
 
-
+    def exibir_resultado(self, vencedor_nome, score_vencedor, score_perdedor):
+        print(f'O {vencedor_nome} venceu!! Com {score_vencedor} pontos, contra {score_perdedor} pontos do oponente.')
+            
     def definir_vencedor(self):
         score_croupier = self.croupier.get_score()
         score_jogador = self.jogador.get_score()
 
-        if score_croupier > 21:
-            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_croupier} pontos de Crupier')
+        if score_croupier > 21 or score_jogador > score_croupier:
+            self.exibir_resultado(self.jogador.name, score_jogador, score_croupier)
+        else:
+            self.exibir_resultado('Crupier', score_croupier, score_jogador)
 
-        elif score_croupier > score_jogador:
-            print(f'O Crupier venceu!! Com {score_croupier} pontos, contra  {score_jogador} pontos de {self.jogador.name}')
-
-        elif score_jogador > score_croupier:
-            print(f'O jogador {self.jogador.name} venceu!! Com {score_jogador} pontos, contra  {score_croupier} pontos de Crupier')
-        
+     
 
 
 
