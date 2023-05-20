@@ -33,4 +33,4 @@ class Mao():
     
     def insert_card(self, card):
         self.cartas.append(card)
-        self.valor_mao(card)
+        self.calcula_valor_mao(card)
