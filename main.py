@@ -1,6 +1,5 @@
 from vite_e_um import Vinte_e_um
 import sys
-import time
 
 def main():
     while True:
