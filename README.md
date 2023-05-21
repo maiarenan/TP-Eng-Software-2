@@ -1,3 +1,4 @@
+
 # ♦ ♥  Jogo 21  ♠ ♣
 
 ## Membros do Grupo
@@ -29,6 +30,20 @@ Essa versão simplificada do Blackjack permite ao jogador experimentar a emoçã
 - Para testes, utilizamos o Pytest.
 
 - Mais informações sobre os requisitos e o diagrama de classes podem ser encontrados na pasta "docs".
+- Para avaliação da qualidade do código, utilizamos o [Lizard](https://github.com/terryyin/lizard).
 
+### Lizard
+O relatório do Lizard é composto, fundamentalmente, por:
+
+>`NLOC`: Número de linhas de código. Essa métrica se refere à quantidade de linhas em cada função. Em geral, funções menores são mais fáceis de entender e manter.  
+>`CCN`: Complexidade ciclomática. Essa métrica indica a quantidade de caminhos independentes através do código-fonte de uma função. Valores altos podem indicar funções complexas que podem ser difíceis de entender e testar.
+>`token`: Número de tokens no código. Um token pode ser um identificador, uma palavra-chave, um separador, um literal ou um operador.
+>`PARAM`: Número de parâmetros da função. Funções com muitos parâmetros podem ser mais difíceis de entender e usar corretamente.
+>`length`: Comprimento da função em linhas de código.
+>`location`: Localização do arquivo e linha onde a função é definida.
+
+O relatório sobre o Jogo 21 mostrou que, em geral, a complexidade ciclomática e o número de linhas de código são baixos, o que remete a um código relativamente simples e direto. Ademais, no resumo é indicado que nenhum limite foi excedido (*complexidade ciclomática > 15 ou comprimento > 1000 ou NLOC > 1000000 ou contagem de parâmetros > 100*), o que é um bom indicativo da qualidade do código.
+
+Além disso, o relatório apontou que as três funções mais complexas do código são: `main`, `perguntar_jogador_proxima_jogada` e `definir_vencedor` e, conforme solicitado, medidas de melhoria de código foram tomadas, conforme *commits* `41b58d5, 5903b50, 4da4f01, 0132174 e 968ce9e`.
 
 ## Execução
