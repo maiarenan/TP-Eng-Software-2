@@ -1,4 +1,4 @@
-from vite_e_um import Vinte_e_um
+from vinte_e_um import Vinte_e_um
 import sys
 
 def main():
