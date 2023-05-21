@@ -35,12 +35,12 @@ Essa versão simplificada do Blackjack permite ao jogador experimentar a emoçã
 ### Lizard
 O relatório do Lizard é composto, fundamentalmente, por:
 
->`NLOC`: Número de linhas de código. Essa métrica se refere à quantidade de linhas em cada função. Em geral, funções menores são mais fáceis de entender e manter. </b>
->`CCN`: Complexidade ciclomática. Essa métrica indica a quantidade de caminhos independentes através do código-fonte de uma função. Valores altos podem indicar funções complexas que podem ser difíceis de entender e testar.</b>
->`token`: Número de tokens no código. Um token pode ser um identificador, uma palavra-chave, um separador, um literal ou um operador.</b>
->`PARAM`: Número de parâmetros da função. Funções com muitos parâmetros podem ser mais difíceis de entender e usar corretamente.</b>
->`length`: Comprimento da função em linhas de código.</b>
->`location`: Localização do arquivo e linha onde a função é definida.</b>
+>`NLOC`: Número de linhas de código. Essa métrica se refere à quantidade de linhas em cada função. Em geral, funções menores são mais fáceis de entender e manter. </br>
+>`CCN`: Complexidade ciclomática. Essa métrica indica a quantidade de caminhos independentes através do código-fonte de uma função. Valores altos podem indicar funções complexas que podem ser difíceis de entender e testar.</br>
+>`token`: Número de tokens no código. Um token pode ser um identificador, uma palavra-chave, um separador, um literal ou um operador.</br>
+>`PARAM`: Número de parâmetros da função. Funções com muitos parâmetros podem ser mais difíceis de entender e usar corretamente.</br>
+>`length`: Comprimento da função em linhas de código.</br>
+>`location`: Localização do arquivo e linha onde a função é definida.</br>
 
 O relatório sobre o Jogo 21 mostrou que, em geral, a complexidade ciclomática e o número de linhas de código são baixos, o que remete a um código relativamente simples e direto. Ademais, no resumo é indicado que nenhum limite foi excedido (*complexidade ciclomática > 15 ou comprimento > 1000 ou NLOC > 1000000 ou contagem de parâmetros > 100*), o que é um bom indicativo da qualidade do código.
 
