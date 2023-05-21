@@ -49,3 +49,6 @@ O relatório sobre o Jogo 21 mostrou que, em geral, a complexidade ciclomática 
 Além disso, o relatório apontou que as três funções mais complexas do código são: `main`, `perguntar_jogador_proxima_jogada` e `definir_vencedor` e, conforme descrição do TP, medidas de melhoria de código foram tomadas, de acordo com os *commits* `41b58d5, 5903b50, 4da4f01, 0132174 e 968ce9e`.
 
 ## Execução
+No console:</br>
+Para executar o jogo basta efetuar o comando "python .\main.py" e seguir as instruções em tela para jogar. </br>
+Para executar os testes, digite o comando "pytest" e o pytest executará todos os testes disponíveis na aplicação.
