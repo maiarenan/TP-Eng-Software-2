@@ -107,21 +107,3 @@ class Vinte_e_um():
             self.exibir_resultado(self.jogador.name, score_jogador, score_croupier)
         else:
             self.exibir_resultado('Crupier', score_croupier, score_jogador)
-
-     
-
-
-
-    # def registrar_saldo(self):
-    #     self.jogador.set_saldo(int(input('Digite o saldo do jogador: ')))
-    
-    # def verifica_saldo(self):
-    #     return self.jogador.saldo >= self.aposta
-
-    # def registrar_aposta(self):
-    #     self.aposta = int(input('Digite o valor da aposta: '))
-    #     if self.verifica_saldo():
-    #         self.jogador.set_saldo(self.jogador.saldo - self.aposta)
-    #     else:
-    #         print('Saldo insuficiente')
-    #         self.registrar_aposta()

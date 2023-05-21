@@ -2,7 +2,6 @@ import mao as Mao
 class Jogador():
     def __init__(self, name = ''):
         self.name = name
-        self.saldo = 0
         self.mao = Mao.Mao()
     
     def cumprimentar_jogador(self):
@@ -14,9 +13,6 @@ class Jogador():
     
     def get_nome(self):
         return self.name
-    
-    def set_saldo(self, saldo):
-        self.saldo = saldo
     
     def insert_card(self, card):
         self.mao.insert_card(card)
