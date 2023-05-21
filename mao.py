@@ -34,3 +34,6 @@ class Mao():
     def insert_card(self, card):
         self.cartas.append(card)
         self.calcula_valor_mao(card)
+
+    def get_score(self):
+        return self.score

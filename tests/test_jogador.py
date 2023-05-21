@@ -21,7 +21,6 @@ def test_jogador(jogador):
     assert jogador.get_score() == 0
     assert jogador.get_mao() == []
 
-
 def test_set_nome(jogador):
     jogador.set_nome('João')
     assert jogador.get_nome() == 'João'
