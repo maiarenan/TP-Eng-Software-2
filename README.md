@@ -1,4 +1,5 @@
 
+
 # ♦ ♥  Jogo 21  ♠ ♣
 
 ## Membros do Grupo
@@ -44,7 +45,7 @@ O relatório do Lizard é composto, fundamentalmente, por:
 >`length`: Comprimento da função em linhas de código.</br>
 >`location`: Localização do arquivo e linha onde a função é definida.</br>
 
-O relatório sobre o Jogo 21 mostrou que, em geral, a complexidade ciclomática e o número de linhas de código são baixos, o que remete a um código relativamente simples e direto. Ademais, no resumo é indicado que nenhum limite foi excedido (*complexidade ciclomática > 15 ou comprimento > 1000 ou NLOC > 1000000 ou contagem de parâmetros > 100*), o que é um bom indicativo da qualidade do código.
+O [**`relatório`**](https://github.com/maiarenan/TP-Eng-Software-2/blob/main/relatorio_lizard.txt)  sobre o Jogo 21 mostrou que, em geral, a complexidade ciclomática e o número de linhas de código são baixos, o que remete a um código relativamente simples e direto. Ademais, no resumo é indicado que nenhum limite foi excedido (*complexidade ciclomática > 15 ou comprimento > 1000 ou NLOC > 1000000 ou contagem de parâmetros > 100*), o que é um bom indicativo da qualidade do código.
 
 Além disso, o relatório apontou que as três funções mais complexas do código são: `main`, `perguntar_jogador_proxima_jogada` e `definir_vencedor` e, conforme descrição do TP, medidas de melhoria de código foram tomadas, de acordo com os *commits* `41b58d5, 5903b50, 4da4f01, 0132174 e 968ce9e`.
 
