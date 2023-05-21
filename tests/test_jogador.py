@@ -8,7 +8,6 @@ def jogador():
     jogador = Jogador()
     return jogador
 
-@pytest.fixture
 def cartas():
     as_ouro = Carta('A' , '♦')
     valete_espada = Carta('J', '♠')
