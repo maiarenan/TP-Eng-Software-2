@@ -23,6 +23,8 @@ Se o jogador tiver uma mão com mais pontos do que a casa, sem ultrapassar 21 po
 
 Essa versão simplificada do Blackjack permite ao jogador experimentar a emoção do jogo, tentando obter uma mão o mais próximo possível de 21 pontos, enquanto enfrenta o desafio de decidir quando parar de pedir cartas e arriscar o resultado final.
 
+Ademais, anexamos um [**`documento`**](https://github.com/maiarenan/TP-Eng-Software-2/blob/main/docs/21%20python.pdf) que contém os requisitos explicados de forma mais detalhada e, também, diagramas UML do projeto.
+
 ## Tecnologias Utilizadas
 
 - Como linguagem de programação principal utilizamos Python.
