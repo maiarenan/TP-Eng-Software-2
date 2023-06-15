@@ -1,6 +1,5 @@
 import pytest
 import subprocess
-from vinte_e_um import Vinte_e_um
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -29,9 +28,7 @@ def test_score_do_jogador_maior_que_0_apos_primeira_jogada():
     output, errors = processo.communicate()
     processo.stdin.close()
     
-    score_jogador = int(output.split("Score do jogador: ")[1])
-
+    score_jogador = int(output.split("Score do jogador: ")[1][0:2])
+    
     assert score_jogador > 0
-
-@pytest.mark.cmd
-def test_score_do_jogador_maior_que_0_apos_primeira_jogada():
+    
