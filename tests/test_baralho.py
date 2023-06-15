@@ -42,3 +42,9 @@ def test_quantidade_de_cartas_no_baralho_pos_remocao(baralho):
     carta = baralho.virar()
     
     assert len(baralho.cartas) == 49
+
+def teste_quantidade_de_cartas_no_baralho_nao_embaralhado(baralho):
+    
+    baralho.novo_deque_nao_embaralhado()
+
+    assert len(baralho.cartas) == 52
