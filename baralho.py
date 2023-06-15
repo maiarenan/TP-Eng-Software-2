@@ -16,6 +16,11 @@ class Baralho:
         random.shuffle(cartas)
         return cartas
     
+    def novo_deque_nao_embaralhado(self):
+        self.cartas.clear()
+        cartas = [Carta(v, n) for v in list(carta_valores) for n in list(carta_nipes)]
+        self.cartas = cartas
+    
     def virar(self):
         """ Retira a carta do topo e remove do baralho. """
         return self.cartas.pop()

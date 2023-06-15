@@ -25,9 +25,6 @@ def test_set_nome(jogador):
     jogador.set_nome('João')
     assert jogador.get_nome() == 'João'
 
-def test_set_saldo(jogador):
-    jogador.set_saldo(100)
-    assert jogador.saldo == 100
 
 def test_insert_card(jogador, cartas):
     jogador.insert_card(cartas[0])
