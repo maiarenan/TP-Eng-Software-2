@@ -69,7 +69,7 @@ class Vinte_e_um():
             elif resposta == 'N':
                 return False
 
-        print('Entrada inválida. Digite S para comprar mais cartas, ou N para parar.')
+            print('Entrada inválida. Digite S para comprar mais cartas, ou N para parar.')
 
     def mostrar_score_jogador(self):
         print(f'Score do jogador: {self.jogador.get_score()}')

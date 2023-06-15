@@ -48,3 +48,11 @@ def teste_quantidade_de_cartas_no_baralho_nao_embaralhado(baralho):
     baralho.novo_deque_nao_embaralhado()
 
     assert len(baralho.cartas) == 52
+
+def teste_primeira_carta_do_baralho_nao_embaralhado(baralho):
+
+    baralho.novo_deque_nao_embaralhado()
+    carta = baralho.virar()
+    primeira_carta = Carta('K', '♣')
+   
+    assert carta == primeira_carta
