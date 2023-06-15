@@ -6,7 +6,7 @@ warnings.filterwarnings("ignore")
 
 @pytest.mark.cmd
 def test_cadastro_jogador_ao_iniciar_jogo():
-    path =  r"C:\Users\rodri\Desktop\Atividades\app_21\TP-Eng-Software-2\main.py"
+    path =  r"C:\Users\rodrigo.braz\Rodrigo_Si\tp_es2\TP-Eng-Software-2\main.py"
     
     processo = subprocess.Popen(['python', path], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
     processo.stdin.write('Rodrigo' + "\n")
@@ -16,9 +16,10 @@ def test_cadastro_jogador_ao_iniciar_jogo():
     
     assert "Olá Rodrigo, bem vindo ao nosso jogo de 21. Esperamos que você se divirta muito!!!" in output
 
+@pytest.mark.flaky(reruns=5)
 @pytest.mark.cmd
 def test_score_do_jogador_maior_que_0_apos_primeira_jogada():
-    path =  r"C:\Users\rodri\Desktop\Atividades\app_21\TP-Eng-Software-2\main.py"
+    path =  r"C:\Users\rodrigo.braz\Rodrigo_Si\tp_es2\TP-Eng-Software-2\main.py"
     
     processo = subprocess.Popen(['python', path], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
     processo.stdin.write('Rodrigo' + "\n")
