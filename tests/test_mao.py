@@ -69,6 +69,6 @@ def test_verifica_se_perdeu(mao, carta_nove_paus, carta_dois_de_copas, carta_val
     mao.insert_card(carta_valete_de_espadas)
     assert mao.verifica_se_perdeu() == True
 
-def test_cartas_valem_10(mao, cartas_valem_10):
+def test_cartas_valem_10(cartas_valem_10):
     '''Testa se todas as cartas que valem 10 valem 10 pontos'''
     assert all (const.cartas_valor_no_21.get(carta.valor) == 10 for carta in cartas_valem_10)
