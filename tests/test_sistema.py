@@ -31,4 +31,4 @@ def test_score_do_jogador_maior_que_0_apos_primeira_jogada():
     score_jogador = int(output.split("Score do jogador: ")[1][0:2])
     
     assert score_jogador > 0
-    
+
