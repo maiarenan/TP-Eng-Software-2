@@ -57,8 +57,9 @@ def test_score_do_jogador_maior_que_0_apos_primeira_jogada(path):
 
     processo = subprocess.Popen(['python', path], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
     processo.stdin.write('Rodrigo' + "\n")
+    processo.stdin.flush()
     processo.stdin.write('S' + "\n")
-
+    processo.stdin.flush()
     
     output, errors = processo.communicate()
     processo.stdin.close()
