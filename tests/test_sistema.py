@@ -36,10 +36,12 @@ def test_cadastro_jogador_ao_iniciar_jogo(path):
 
     nome  = "Rodrigo"
     processo.stdin.write(nome + "\n")
-    processo.stderr.close()
-    processo.stdin.close()
+    processo.stdin.flush()
 
     saida, _ = processo.communicate()
+
+    processo.stdin.close()
+    processo.stderr.close()
 
     #monta a regex para remover os naipes
     regex = re.compile('|'.join(re.escape(naipes) for naipes in naipes.values()))
