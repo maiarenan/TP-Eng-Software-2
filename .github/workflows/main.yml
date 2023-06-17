@@ -23,6 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipreqs
         echo 'PYTHONIOENCODING=utf8' >> $GITHUB_ENV
+        echo 'PYTHONUTF8=1' >> $GITHUB_ENV
         pipreqs . --force
 
     - name: Install dependencies
