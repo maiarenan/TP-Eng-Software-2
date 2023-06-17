@@ -22,9 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pipreqs
-        if [[ "${{ matrix.operating_system }}" == "windows-latest" ]]; then
-            echo 'PYTHONIOENCODING=utf8' >> $GITHUB_ENV
-        fi
+        echo 'PYTHONIOENCODING=utf8' >> $GITHUB_ENV
         pipreqs . --force
 
     - name: Install dependencies
