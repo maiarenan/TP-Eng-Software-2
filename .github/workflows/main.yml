@@ -19,4 +19,4 @@ jobs:
         pip install -r requirements.txt
     - name: Run tests
       run: |
-        find . -name "test_*.py" -path "./tests/*" -exec python -m unittest {} +
+        python -m pytest tests/
