@@ -1,7 +1,4 @@
-
-
-# ♦ ♥  Jogo 21  ♠ ♣
-
+# ♦ ♥  Jogo 21  ♠ ♣  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/maiarenan/TP-Eng-Software-2/actions/workflows/main.yml"><img alt="Python application test" src="https://github.com/maiarenan/TP-Eng-Software-2/actions/workflows/main.yml/badge.svg"></a> <a href="https://github.com/maiarenan/TP-Eng-Software-2/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/maiarenan/TP-Eng-Software-2"></a>
 ## Membros do Grupo
 
 **Rodrigo Braz**
